@@ -6,4 +6,4 @@
 # set-item wsman:localhost\client\trustedhosts -value *
 
 $hosts = @("VM1-TKACHUK", "VM2-TKACHUK", "VM3-TKACHUK")
-Invoke-Command -ScriptBlock {Restart-Computer -Force} -ComputerName $hosts -Credential "Ser2012R2-Y550\Administrator"
+Invoke-Command -ScriptBlock {Restart-Computer -Force} -ComputerName $hosts -Credential "S2012R2\Administrator"
